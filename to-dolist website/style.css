@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #222;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-toggler {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links a {
+        padding: 10px;
+        text-align: center;
+        border-top: 1px solid #444;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 70px;
+    margin: 0;
+}
+
+.container {
+    background: #444;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+h1 {
+    margin: 0 0 20px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#task-input,
+#task-date,
+#task-category,
+button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+}
+
+button {
+    background: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4cae4c;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #555;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-buttons button {
+    background: #5cb85c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-buttons button:hover {
+    background: #4cae4c;
+}
